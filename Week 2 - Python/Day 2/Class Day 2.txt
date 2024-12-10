@@ -1,0 +1,30 @@
+1. Method is only applicable for strings unlike function
+
+2. "okay".upper() NOT upper.'okay'
+
+3. "okayyyy"/count ('e'), not count ('e')."okayyyy"
+
+4. For strings, it should be in the end, not in the front
+
+5. if str is not working, restart kernel. check on gpt for drawbacks on restarting kernel
+
+6. MAKE SURE FOR AND and OR OPERATOR I.E., "xyz" AND "xyz", make sure both the sides have functions instead of string
+i.e, xyz=hhh and xyz=kkk, xyz AND xyz
+
+7. Task : https://www.ontario.ca/page/what-ohip-covers#section-6
+def eye_exam_covered(age, qualifying_condition, time_since_last_exam):
+Qualifying_condition True or False
+
+
+8. 
+Escape sequence	Description
+\'	Single quote - WORKS FOR BOTH ''' AND PRINT CODE
+\"	Double quote - WORKS FOR BOTH ''' AND PRINT CODE
+\	Backslash - FOR ''' "\" GIVES DOUBLE \\ AND FOR PRINT IT GIVES NRMAL ONE \
+
+\t	Tab - DOESNT WORK WITH ''' AND WORKS WITH PRINT
+\n	Newline - DOESNT WORK WITH ''' AND WORKS WITH PRINT
+\r	Carriage return - Anything before the "\r" is omitted. DOESNT WORK WITH ''' AND WORKS WITH PRINT
+
+==      Boolean - Is equal to - Is case sensitive i.e., 'apple' is not equal to 'Apple'
+!=      Boolean - Is not equal to - Is case sensitive i.e., 'apple' is not equal to 'Apple'

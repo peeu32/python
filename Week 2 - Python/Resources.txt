@@ -1,0 +1,1209 @@
+Resources:
+
+
+
+#Decimal numbers are called floats in programming language
+say code is 5 + 2 = 7
+#5 and 2 are int data type
+#2.5 is a float data type
+#5 and 2 are operands
+# "/" is an operator
+
+#to get a integer division
+10 // 3
+answer 3 (it gives the lower end integer)
+
+#to get the remainder, it's called modulo or mod
+10 % 3
+answer 1
+
+#to get an exponentiation
+2 ** 3
+answer 8
+
+#True and False are Boolean data type
+
+#Operators that get Boolean data type, that is true or false
+> Greater than
+< Less than
+<= Less than or equal to
+== Equal to
+!= Not equal to
+not
+and
+or
+
+#Variables names can include letters, digits, and underscores
+#It CANNOT start with a digit
+#They are case sensitive
+
+#degree_Celcius = degree_celcius + 10
+is same as
+degree_celcius+=10
+
+#defining a function
+def function_name ( parameters ):
+    docstring i.e., "" Mention what the function does ""
+    body
+    return
+
+1example: defining/writing a restaurant bill calculation function
+def cal_bill ( price, tax=.13, tip=.22):
+    '''Mention what this function does'''
+    tax = price * tax
+    tip = price * tip
+    final = price + tax + tip
+    return final
+
+#using the function
+function_name ( arguments)
+
+example:
+cal_bill (100 , .13 , .15)
+
+
+2example: defining/writing a celcius to farenheit calculation function
+def c_to_f (celcius):
+   '''Convert degrees from celcius t farehnheit'''
+   degrees_f = (9 / 5) * celcius + 42
+   return degrees_f
+
+#using the function
+function_name ( arguments)
+
+example:
+c_to_f (100)
+
+
+
+1. 
+Escape Sequence Description
+
+\'	Single quote - WORKS FOR BOTH ''' AND PRINT CODE
+\"	Double quote - WORKS FOR BOTH ''' AND PRINT CODE
+\	Backslash - FOR ''' "\" GIVES DOUBLE \\ AND FOR PRINT IT GIVES NRMAL ONE \
+
+\t	Tab - DOESNT WORK WITH ''' AND WORKS WITH PRINT
+\n	Newline - DOESNT WORK WITH ''' AND WORKS WITH PRINT
+\r	Carriage return - Anything before the "\r" is omitted. DOESNT WORK WITH ''' AND WORKS WITH PRINT
+
+
+2. 
+==      Boolean - Is equal to - Is case sensitive i.e., 'apple' is not equal to 'Apple'
+!=      Boolean - Is not equal to - Is case sensitive i.e., 'apple' is not equal to 'Apple'
+
+
+
+3. 
+How to create a table like this:
+Operator	Description
+//	Integer division (always rounds down)
+%	Modulo or remainder
+**	Exponentiation
+
+Ans:
+
+| Operator | Description |
+|---|---|
+| // | Integer division (always rounds down)|
+| % | Modulo or remainder |
+| ** | Exponentiation |
+
+
+4. 
+## Operator precedence
+
+Arithmetic and comparison operators are evaluated in the following order. We can enclose operations in parentheses to override the order of precedence -- operations in parentheses are evaluated before the rest of the expression.
+
+| Order | Operator | Description |
+|---|---|---|
+| 1 | `**` | Exponentiation |
+| 2 | `-`| Negation |
+| 3 | `*`, `/`, `//`, `%` | Multiplication, division, integer division - ALWAYS ROUNDS DOWN, and modulo |
+| 4 | `+`, `-` | Addition and subtraction |
+| 5 | `<`, `<=`, `>`, `>=`, `==`, `!=` | Less than, less than or equal to, greater than, greater than or equal to, equal, not equal |
+
+
+
+5.
+5//2
+Would give 2 not 3, so // always rounds down
+
+6.
+When we want to update a variable value, using a variable on both sides of an assignment statement is useful.
+degrees_celsius = degrees_celsius + 10
+
+SHORTCUT:
+degree_celcius+=10
+
+7.
+If want the answer to ROUND DOWN, use integer division i.e., // I.E., 7/4 WILL GIVE 1
+If want the answer to ROUND UP, use round() I.E., 7/4 WILL GIVE 1
+
+8. 
+When we function nested within another function, we start from the inside and we work our way out.
+We do this with all built in Python function.
+
+9.
+round (9/4,3) ; here 3 gives the number of decimals digits i want to shown after decimal.
+
+10.
+Division by 0 i.e., 5/0 or 10/0 is undefined in mathematics, and Python follows standard mathematical rules that's why 5/0 will raise an exception to notify that the operation is invalid.
+Returning 0 in case of division by zero would be misleading because it would imply hat dividing by zero gives a valid result (which it doesn't).Division by zero could lead to confusion or incorrect behavior in programs. For instance, if it silently returned 0, it could cause incorrect results later in your code, leading to bugs that are harder to track down.
+
+11.
+In a function, example below, adding a dicstring i.e., ''' instead of # helps in understanding when we use the help option.
+For instance if we use help(name of the function I've created). It will give back the docstring, i.e., what does the function do. So make the docstring explicit
+
+2example: defining/writing a celcius to farenheit calculation function
+def c_to_f (celcius):
+   '''Convert degrees from celcius t farehnheit'''
+   degrees_f = (9 / 5) * celcius + 42
+   return degrees_f
+
+#using the function
+function_name ( arguments)
+
+
+12. From the function formula below:
+Scope - The context and extent to which a variable can be accessed
+Parameters don't exists outside of the function, because it's locally scoped.
+
+So the main difference between arguments and parameters is, arguments caN BE accessed globally i.e., outside of the function cell, parameters canT BE accessed outside of the function.
+
+Parameters are locally scoped variables, arguments are globally scoped variables.
+
+#defining a function 
+def function_name ( parameters ):
+    docstring i.e., "" Mention what the function does ""
+    body
+    return
+
+
+13.
+Escape sequence	Description
+\'	Single quote - WORKS FOR BOTH ''' AND PRINT CODE
+\"	Double quote - WORKS FOR BOTH ''' AND PRINT CODE
+\	Backslash - FOR ''' "\" GIVES DOUBLE \\ AND FOR PRINT IT GIVES NRMAL ONE \
+
+\t	Tab - DOESNT WORK WITH ''' AND WORKS WITH PRINT
+\n	Newline - DOESNT WORK WITH ''' AND WORKS WITH PRINT
+\r	Carriage return - Anything before the "\r" is omitted. DOESNT WORK WITH ''' AND WORKS WITH PRINT
+
+==      Boolean - Is equal to - Is case sensitive i.e., 'apple' is not equal to 'Apple'
+!=      Boolean - Is not equal to - Is case sensitive i.e., 'apple' is not equal to 'Apple'
+        Both are type sensitive i.e., "20"==20 will give false, because one is integer and the other one is string
+
+
+
+14.
+firstname = 'Abcdef'
+firstname[0:3]
+it will return Abc not Abcd because for slice syntax start is inclusive, stop is exclusive/
+
+If I want to reverse, it'll be
+firstname [::-1]
+
+
+15.
+'PEEU'.lower()
+#peeu
+
+'PEEU'.count('E')
+#1
+
+'filename.csv'. endswith('csv)
+#True
+
+'long file name with spaces.csv'. replace (" ","-")
+long_file_name_with_spaces.csv
+
+16.
+first = "What"
+last = "Name"
+
+f'Candidate\'s intitials are {first[0]}. {last[0]}.'
+#"Candidate's intitials are W. N."
+
+
+17.
+age = input('How old are you?') #if age=10
+age_nextyear = int (age) + 1
+age_nextyear
+#11
+
+18.
+# to do arithmetic on an input, we need to convert it
+age_next_bday = int(age) + 1
+print('Next birthday you will be {}'.format(age_next_bday))
+#Next birthday you will be 11
+
+
+19.
+LOGICAL OPERATOR
+Evaluates to `True` if both statements are true.
+
+|X|Y|X `and` Y|
+|-|-|-|
+|True|True|True|
+|False|True|False|
+|True|False|False|
+|False|False|False|
+
+
+20.
+Always keep Booleans, if it's not Boolean whatever type of data it is in the RIGHT, python will pick that up
+ex:
+is_winter = True
+is_summer = True
+is_winter and is_summer
+#True
+
+ex1:
+is_winter='winter'
+is_summer = true
+is_summer and is_winter
+#'winter'
+
+ex2:
+'python' and 'Python'
+#'Python'
+
+## To avoid confusion and ensure consistent behaviour, it's recommended to use boolean values (`True` or `False`) explicitly when working with logical operations to ensure predictable outcomes based on boolean logic.
+
+
+21.
+temp = 46
+if temp <= 0 :
+    print('It is freezing cold')
+elif temp <= 15:
+    print ('It is cold')
+elif temp <= 30 :
+    print ('It is hot')
+elif temp <= 45 :
+    print ('It is really hot')
+else:
+    print('It is extremely hot')
+
+
+22.
+LIST
+
+vowels = ['a', 'e', 'i', 'o', 'u']
+print(f'{vowels} are vowels.')
+#vowels = ['a', 'e', 'i', 'o', 'u']
+print(f'{vowels} are vowels.')
+
+
+23.
+Integers are immutable
+Lists are mutable
+
+
+24.
+append
+ex:
+test = [1,2,3]
+test1 = [4,5,6]
+test.append(test1)
+#[1,2,3,[4,5,6]]
+
+
+25.
+extend
+ex:
+test = [1,2,3]
+test1 = [4,5,6]
+test.extend(test1)
+#[1,2,3,4,5,6]
+
+
+26.
+Functions return a value, methods change an original list.
+
+27.
+insert.(index number, input what you want to be added to the list )
+ex:
+test=[1,2,3,4,5]
+test.insert (3,100)
+#[1,2,3,100,4,5]
+
+
+28.
+
+sorted.(variable)
+ex:
+test = 'peeu'
+#[e,e,p,u]
+
+ex1:
+NOTE: Upper case letters come before lower case letter
+test = 'Peeu'
+#[P,e,e,u]
+
+
+29.
+def last_name(name):
+    result = name[-2]
+    return result
+
+sorted(first_last,key=last_name)
+#[['arko', 12], ['asad', 16], ['debojit', 14], ['peeu', 10]]
+
+
+30.
+For List we use [] - it's ordered, mutable, the values can be changed dynamically
+For Tuples we use () - It's ordered, immutable, the values cannot be changed dynamically
+For Sets we use {} - it's unordered, distinct, mutable, the values can be changed dynamically
+For Dictionaries we use {} - it's ordered, mutable, the values can be changed dynamically, key-value pairs - every key is unique
+String, integer, float - Immutable
+
+
+
+
+| Collection | Mutable? | Ordered? | Use when...|
+|---|---|---|---|
+| `str` | No | Yes | You want to keep track of text. |
+| `list` | Yes | Yes | You want to keep track of and update an ordered sequence.|
+| `tuple` | No | Yes | You want to build an ordered sequence that you know won't change or that you want to use as a key in a dictionary or as a value in a set. |
+| `set` | Yes | No | You want to keep track of values, but order doesn't matter, and you don't want duplicates. The values must be immutable. |
+| `dict` | Yes | No | You want to keep a mapping of keys to values. The keys must be immutable. |
+
+
+Use lists when collection needs to change (add, remove, modify). When the collection is constant and should not change, use tuple.
+
+
+31.
+If you want to remove duplicates:
+
+ex:
+pin_codes = [2B1 , 1Z4, 2G9, 2B1]
+set(pin_codes)
+# {1Z4, 2B1, 2G9}
+
+
+32.
+Sets cannot be sliced i.e., i cannot find the value with the help of indexing because it's not ordered
+
+33.
+Set Operations
+
+To find out the difference
+ex:
+test701={'peeu','tapai','ma','dada'}
+test702=['haha','peeu']
+print(f'in test 701 but not in test 702: {test701.difference(test702)}')
+
+#print(f'in test 701 but not in test 702: {test701.difference(test702)}')
+
+To find out the values that are in only one of two sets:
+print(f'only in 1 set: {test701.symmetric_difference(test702)}')
+#only in 1 set: {'ma', 'haha', 'dada', 'tapai'}
+
+To find out the values that are in common:
+print(f'both have in common: {test702.intersection(test701)}')
+both have in common: {'peeu'}
+
+To find out the values that are in both the sets:
+print(f'all member: {test702.union(test701)}')
+all member: {'tapai', 'ma', 'dada', 'peeu', 'haha'}
+
+
+34.
+Dictionaries are key-value pairs. Dictionaries are also called associative arrays
+Keys are like attributes/variables/COLUMNS
+Values are like cases/observations/ROWS
+Each key in a dictionary must be unique. If you try to assign a new value to an existing key, it will overwrite the old value.
+
+Ex:
+IIT_Scores_Winter1 = {'Maths1' : 70 ,
+              'Stats1' : 80 ,}
+
+
+Total_IITScore = {'First_Term' : IIT_Scores_Winter1 ,
+                  'Second_Term' : {'Python' : 70 ,
+                   'Stats2' : 75  
+                   }}
+
+Total_IITScore['Second_Term']['Python']
+
+#70
+
+
+
+# Creating a dictionary
+person = {
+    'name': 'John',
+    'age': 25,
+    'city': 'New York'
+}
+
+# Accessing a value using a key
+print(person['name'])  # Output: John
+
+# Creating a dictionary
+person = {
+    'name': 'John',
+    'age': 25,
+    'city': 'New York'
+}
+
+# Accessing a value using a key
+print(person['name'])  # Output: John
+
+# Modifying a value
+person['age'] = 26
+
+# Adding a new key-value pair
+person['job'] = 'Engineer'
+
+# Deleting a key-value pair
+del person['city']
+
+# Printing the dictionary
+print(person)
+
+
+Output - {'name': 'John', 'age': 26, 'job': 'Engineer'}
+
+
+35.
+If I want to find the value of a particular key
+
+Ex:
+Total_IITScore.get('First_Term')
+Total_IITScore.get('First_Term')
+
+
+
+36.
+We can check to see if a key is in a dictionary with `in`.
+
+Ex:
+2016 in olympics_cities
+#True
+
+
+37.
+# 'in' looks for matching keys
+
+Ex:
+'Rio de Janiero' in olympics_cities
+#False
+Because Rio de Janiero is a value not key
+
+
+38.
+If we assign a value to a key that doesn't exist, the key:value pair will be added to the dictionary. If we assign a value to a key that already exists, the value for that key will be updated.
+
+Ex:
+Total_IITScore ['Third_Term'] = {'DBMS' : 70}
+
+39.
+To remove a key:value pair from a dictionary, we can use the `del` operator.
+
+Ex:
+del Total_IITScore ['Second_Term'] ['Python']
+
+
+40.
+Getting all dictionary keys
+
+Ex:
+Total_IITScore.keys()
+#Total_IITScore.keys()
+
+Getting all dictionary values
+Ex:
+Total_IITScore.values()
+#dict_values([{'DBMS': 70}, {'Stats2': 75}, {'DBMS': 70}])
+
+
+
+41.
+## What are iteration and loops?
+
+Earlier, we saw how to control the flow of a program through `if`/`elif`/`else` statements, which tell Python to run or skip blocks of code depending on whether a condition is met.
+
+We can also tell Python to repeat code in a loop for a certain number of times or until a condition is met, a technique called _iteration_. For example, we may want to manipulate every item in a list individually. Copy/pasting code for each item is inefficient and error-prone. Instead, we can use one of Python's two loops: `for` loops or `while` loops.
+
+
+42.
+## `for` loops
+
+A `for` loop runs an indented block of code for every item in an _iterable_ -- a data type like a list, tuple, set, dictionary, or even string. When setting up a `for` loop, we have to specify a variable name to refer to individual items by. Try to pick one that makes sense, but if you're in a rush, `i` (for index) is conventional.
+
+
+
+Ex:
+IITCourses = ['Maths' , 'Stats', 'Python', 'DBMS']
+for i in IITCourses:
+    print (f' {i} is completed')
+
+# Maths is completed
+ Stats is completed
+ Python is completed
+ DBMS is completed
+
+
+43.
+If we simply want to run a block of code _n_ number of times, we can use the `range()` function to create an iterable to loop over.
+
+Ex:
+for i in range(7):
+    print(i, i*2)
+
+#0 0
+1 2
+2 4
+3 6
+4 8
+5 10
+6 12
+
+
+44.
+Ex:
+first=['peeu madras' , 
+       'arko madras', 
+       'raunak madras']
+completename = []
+
+for i in first:
+    completenameFINAL = 'Name: ' + i.replace('madras', 'last name')
+    completename.append(completenameFINAL)
+
+for name in completename:
+    print(name)
+
+#Name: peeu last name
+Name: arko last name
+Name: raunak last name
+
+
+45.
+enumerate()
+It gives the index position and the value
+
+Ex.
+stops = ['Sheppard-Yonge', 'Bayview', 'Bessarion', 'Leslie', 'Don Mills']
+for idx, stop in enumerate(stops):
+    print(f'Stop {idx + 1} is {stop}.')
+
+#Stop 1 is Sheppard-Yonge.
+Stop 2 is Bayview.
+Stop 3 is Bessarion.
+Stop 4 is Leslie.
+Stop 5 is Don Mills.
+
+
+
+Ex:
+# double a list in place
+numbers = [1, 10, 100, 1000]
+for idx, val in enumerate(numbers):
+    numbers[idx] = val * 2
+numbers
+
+#[2, 20, 200, 2000]
+
+
+46.
+## Looping over two iterables at once
+
+To loop over more than one iterable at the same time, we can `zip()` them up. Note that if the iterables are different lengths, we won't get the "extra" values in the longer iterable.
+
+
+Ex:
+lats = (43.650, 45.520, 49.280)
+lons = (-79.380, -73.570, -123.130)
+
+for i, j in zip(lats, lons):
+    print(f'({i}, {j})')
+
+#(43.65, -79.38)
+(45.52, -73.57)
+(49.28, -123.13)
+
+
+
+47.
+## `while` loops
+
+What if we aren't sure how many times code needs to run, but we know how to tell when we're done? In that case, we can use a `while` loop, which runs an indented block of code until a condition is met.
+
+
+48.
+Difference between FOR loop and WHILE loop :
+FOR - Runs the code block for each item in the sequence.
+WHILE - Runs as long as the condition is true.
+
+
+Ex:
+countdown = 4
+
+while countdown > 0:
+    print(countdown)
+    countdown -= 1
+
+#4
+3
+2
+1
+
+If we do not put countdown -= 1, it'll be an infinite loop
+
+
+49.
+## `break`ing free
+
+A `break` statement interrupts the execution of a loop.
+
+Ex:
+countdown = 4
+
+while countdown > 0:
+    print(countdown)
+    if countdown == 3:
+        print('We are breaking the loop early.')
+        break
+    countdown -=1
+
+print('Done iterating.')
+
+#4
+3
+We are breaking the loop early.
+Done iterating.
+
+
+50.
+
+Ex:
+while True:
+    password = input("What's the password? ")
+    # case-insensitive comparison
+    if password.lower() == 'open sesame':
+        print("You're in!")
+        break
+
+
+#It'll continue till the time I give the correct password
+
+
+51.
+wishes = 3
+while wishes > 0:
+    wish = input('Make a wish: ')
+    if 'infinite wishes' in wish.lower():
+        print('You can\'t do that!')
+        continue
+    else:
+        print('Wish granted.')
+    wishes -= 1
+print('You have used all your wishes.')
+
+52.
+## Opening, Reading, and Writing Files
+
+Python has a built-in function, `open()` for opening files.
+
+| `open()` mode | Description |
+|---|---|
+|`'r'` | Read-only. Produces an error if the file does not already exist. |
+|`'w'` | Write. Creates a new file if one does not exist. If the file already exists, the current contents are deleted and overwritten. |
+|`'a'`| Append. Adds to an existing file. If the file does not exist, it will be created. |
+
+
+
+52.
+open('file path' , 'r' if read ; 'w' if write ; 'a' if append)
+
+
+53.
+'FOR' 'WHILE' 'WITH' SYNTAX:
+
+FOR: 
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+
+WHILE:
+countdown = 4
+
+while countdown > 0:
+    print(countdown)
+    if countdown == 3:
+        print('We are breaking the loop early.')
+        break
+    countdown -=1
+
+
+WITH:
+with open(r '../../05_src/data/slides_data/california_housing_test.csv', 'r') as f:
+    print(f)
+
+
+54.
+putting a 'r' before the link will make the link as the raw string, and won't give error.
+Put 'r' right before the link without a space, else it'll cause a syntax error.
+
+
+55.
+### Reading files
+
+Opening a file doesn't immediately get us the file's contents. To do that, we must use a read method.
+
+* `read()` returns the full file contents, which can be overwhelming for larger files. RETURN THE COMPLETE CONTENT
+* `readline()` returns only the next/FIRST line/FIRST ROW in the file. Python keeps track of where it is in the file.
+* `readlines()` returns the full file as a list. Each item is one line in the file. ALL THE CONTENT IN ONE LINE.
+
+
+56.
+
+#### Difference between 'read' and 'reader' is reader is for the csv library.
+read() should not have file names in the parenthesis, reader should have the variable name i,e., reader('variable name')
+
+
+Ex: Using 'read' for CSV file:
+
+import csv
+
+with open(r'C:\Users\peeu3\OneDrive\Desktop\MINE\EY Van_File Transfer\UofT\Course\GIT REPOs\python\05_src\data\slides_data\california_housing_test.csv', 'r') as CSVV:
+    print(CSVV.read())
+
+#output - A single string containing the entire file content. Less structured, harder to manipulate data. Suitable for reading smaller files as a whole (e.g., text).
+
+
+Ex: Using 'reader' for CSV file:
+import csv
+
+with open (r'C:\Users\peeu3\OneDrive\Desktop\MINE\EY Van_File Transfer\UofT\Course\GIT REPOs\python\05_src\data\slides_data\california_housing_test.csv', 'r') as CSVV:
+    content = csv.reader(CSVV)
+    for list in content:
+        print(list)
+
+#output - A list of rows, where each row is a list of column values. Structured data, easy to manipulate (e.g., access specific columns). Best for working with CSV data where each row needs to be processed.
+
+
+56.
+for: This starts the loop. It's telling Python, "I'm about to repeat something a number of times."
+i: This is a variable (a placeholder). In each iteration (each time the loop runs), i will HOLD THE VALUE from the sequence generated by range(5). So on the first loop, i will be 0, on the second loop, it will be 1, and so on.
+
+with open('../../05_src/data/slides_data/california_housing_test.csv', 'r') as f:
+    for i in range(5):
+        print(f.readline())
+
+
+57.
+### Writing files
+
+There are corresponding `write()` methods for files.
+
+* `write()` writes a string to file. DOESNT ADD NEW LINE
+* `writelines()` writes each item in an iterable to file, with no separating text in between. ADDS NEW LINE
+
+
+
+58.
+You can't just print in 'with open' method, you need to print(file name.read())
+
+59.
+Writing a new file and then read the file.
+
+Ex:
+Subjects=['Python' , 'Maths1' , 'Stats1']
+with open ('Subjects.txt' , 'w') as SubjectsTaken:
+    SubjectsTaken.writelines(Subjects)
+with open ('Subjects.txt','r') as SubjectsTaken:
+    print(SubjectsTaken.read())
+
+
+
+60.
+read() should not have the file name in the parenthesis.
+read() is used to read the contents of the file. But it does not take any arguments like the file name. It simply reads the entire content of the file when called.
+
+
+
+61.
+If we create a file, work on it and then want to see where is it saved, we use the following.
+
+import os
+
+# get the path to the folder we're currently in
+os.getcwd()
+
+# see the contents of the current folder
+os.listdir()
+
+#if want to see what files are there in cwd:
+os.listdir()
+
+
+62.
+To get full path of files in a folder
+
+
+cd = os.getcwd()
+fullpath = []
+for i in os.listdir():
+    fullpath.append(os.path.join(cd,i))
+fullpath
+
+#['c:\\Users\\peeu3\\OneDrive\\Desktop\\MINE\\EY Van_File Transfer\\UofT\\Course\\GIT REPOs\\python\\practise-PEEU\\Subjects.txt',
+ 'c:\\Users\\peeu3\\OneDrive\\Desktop\\MINE\\EY Van_File Transfer\\UofT\\Course\\GIT REPOs\\python\\practise-PEEU\\test1.txt',
+ 'c:\\Users\\peeu3\\OneDrive\\Desktop\\MINE\\EY Van_File Transfer\\UofT\\Course\\GIT REPOs\\python\\practise-PEEU\\Untitled-1.ipynb']
+
+
+
+
+63.
+os.path is a module within the os module that provides functions for manipulating and working with file and directory paths.
+
+os.path.join(path1, path2): Joins one or more path components.
+
+os.path.exists(path): Checks if a file or directory exists.
+
+os.path.isdir(path): Checks if the path is a directory.
+
+os.path.isfile(path): Checks if the path is a file.
+
+os.path.basename(path): Returns the base name of the file or directory (the last part of the path).
+
+os.path.dirname(path): Returns the directory part of the path (everything except the file name).
+
+os.path.abspath(path): Returns the absolute path of the file or directory.
+
+
+
+64.
+# check if a file exists to avoid overwriting it
+
+text = 'this is to test'
+if os.path.exists('testText.txt'):
+    print('It exists')
+else:
+    with open('testText.txt','w') as TestFile:
+        TestFile.write(text)
+
+
+
+65.
+A class name should always start with capital letter.
+
+
+# Exercise 1
+
+Create a class called `Person`, and create a Person object with the following attributes and methods:
+
+**Attributes**
+- first_name
+- middle_name
+- last_name
+- date_of_birth
+
+**Methods**
+- full_name --> Takes the first and last name and prints out the full name
+- age --> Takes today's date and the date of birth and subtracts it. The result should print out the age
+
+
+
+Code:
+
+from datetime import datetime
+class Person:
+    def __init__(self, fname, mname, lname, DOB):
+        self.fname = fname
+        self.mname = mname
+        self.lname = lname
+        self.DOB = DOB
+    
+    def full_name(self):
+        print ('My full name is', self.fname, self.mname, self.lname)
+    
+    def age(self):
+        today = datetime.today()
+        birthdate = self.DOB
+        age = today.year - birthdate.year
+        print(f'My age is {age}')
+
+Person1 = Person('Peeu','Banerjee','Banerjee', datetime(1994, 2,3))
+Person2 = Person('Debojit','Banerjee' , 'Banerjee', datetime(1988,4,14))
+Person1.full_name()
+Person1.age()
+Person2.full_name()
+Person2.age()
+
+
+#Output
+My full name is Peeu Banerjee Banerjee
+My age is 30
+My full name is Debojit Banerjee Banerjee
+My age is 36
+
+
+66.
+Array - A collection of values stored in an ordered manner
+1D Array - A single line of elements (like a list)
+2D Array - A grid/matrix of elements, consisting of rows and columns
+
+
+67.
+# number of dimensions
+print(a.ndim)
+Output: 2
+
+# this says the number of rows, number of columns
+print(a.shape)
+Output: 2, 3
+
+# notice that the size is rows * columns
+print(a.size)
+Output: 6
+
+# int32 is a numpy-provided dtype
+print(a.dtype)
+Output: int32
+
+
+68.
+np.zeros((2, 3, 2))
+
+first 2 - means 2 rows
+3 - means 3 rows
+2 - do it twice
+
+69.
+a = np.array([[1, 2, 3],
+              [3, 2, 1]])
+
+Output:
+array([[1, 2, 3],
+       [3, 2, 1]])
+
+
+
+69.
+a = np.array([[1, 2, 3],
+              [3, 2, 1]])
+
+# create an array of ones based on the earlier a array
+np.ones_like(a)
+
+Output : array([[1, 1, 1],
+       [1, 1, 1]])
+
+
+70.
+# create a 1D array from 1 til 10 in steps of 2
+np.arange(1, 10, 2)
+
+Output : array([1, 3, 5, 7, 9])
+
+
+71.
+np.random.seed(1)
+
+# seed is used to create a reproducible random example.
+By specifying 1, you are ensuring that the random numbers generated will be the same every time you run the code. 
+
+np.random.randint(1, 10, (3, 4))
+
+# create a 3x4 array of random integers between 1 and 10
+The first argument (1) is the lower bound (inclusive), meaning the random integers generated will be at least 1.
+The second argument (10) is the upper bound (exclusive), meaning the random integers generated will be less than 10.
+The third argument (3, 4) specifies the shape of the output array. It creates an array with 3 rows and 4 columns (a 3x4 array).
+
+
+
+Output:
+array([[6, 9, 6, 1],
+       [1, 2, 8, 7],
+       [3, 5, 6, 3]])
+
+
+72.
+np.repeat(10, 5)
+np.repeat(a, b)
+repeats 'a' 'b' number of times.
+
+Output: 
+array([10, 10, 10, 10, 10])
+
+
+73.
+`tile()` repeats the whole input array a specified number of times.
+
+np.title (a,b)
+rows will be repeated 'a' number of times. column will be repeated 'b' number of times.
+
+onedim_arr = np.array([1, 2, 3, 4, 5])
+multidim_arr = np.tile(onedim_arr, (10,2)) 
+
+Output:
+array([[1, 2, 3, 4, 5, 1, 2, 3, 4, 5],
+       [1, 2, 3, 4, 5, 1, 2, 3, 4, 5],
+       [1, 2, 3, 4, 5, 1, 2, 3, 4, 5],
+       [1, 2, 3, 4, 5, 1, 2, 3, 4, 5],
+       [1, 2, 3, 4, 5, 1, 2, 3, 4, 5],
+       [1, 2, 3, 4, 5, 1, 2, 3, 4, 5],
+       [1, 2, 3, 4, 5, 1, 2, 3, 4, 5],
+       [1, 2, 3, 4, 5, 1, 2, 3, 4, 5],
+       [1, 2, 3, 4, 5, 1, 2, 3, 4, 5],
+       [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]])
+
+74.
+T = Transpose
+
+b = np.array([[5, 4, 3, 2, 1, 0],
+              [10, 8, 6, 4, 2, 0]])
+
+b.T
+
+Output:
+array([[ 5, 10],
+       [ 4,  8],
+       [ 3,  6],
+       [ 2,  4],
+       [ 1,  2],
+       [ 0,  0]])
+
+
+75.
+b.reshape(4, 3)
+# change dimensions
+
+array([[ 5,  4,  3],
+       [ 2,  1,  0],
+       [10,  8,  6],
+       [ 4,  2,  0]])
+
+76.
+# collapse an array to one dimension
+b.flatten()
+
+Output:
+array([ 5,  4,  3,  2,  1,  0, 10,  8,  6,  4,  2,  0])
+
+
+77.
+a = np.array ([[1,2,3],[3,2,1]])
+b = np.array ([[5,4,3,2,1,0],[10,8,6,4,2,0]])
+
+# stack a and b horizontally
+np.hstack((b, a))
+
+Output:
+array([[ 5,  4,  3,  2,  1,  0,  1,  2,  3],
+       [10,  8,  6,  4,  2,  0,  3,  2,  1]])
+
+
+78.
+a = np.array ([[1,2,3],[3,2,1]])
+b = np.array ([[5,4,3,2,1,0],[10,8,6,4,2,0]])
+
+# reshape b before stacking vertically
+np.vstack((a.reshape(1,6),b))
+
+Output:
+array([[ 1,  2,  3,  3,  2,  1],
+       [ 5,  4,  3,  2,  1,  0],
+       [10,  8,  6,  4,  2,  0]])
+
+79.
+
+We can still calculate statistics for multidimensional arrays, but we must specify the axis to calculate over. To calculate values for each column, we use `axis=0`. To calculate for each row, we use `axis=1`.
+
+
+#### Summary
+
+- `axis=0`: Column-wise operation (down the rows).
+- `axis=1`: Row-wise operation (across the columns).
+
+
+80.
+If it's 1 dimensional, for ex : A = [1,2,3,4]
+If i call A[0], output will be [1].
+
+but when 2 dimensional, 
+A=array([[ 1,  2,  3,  3,  2,  1],
+       [ 5,  4,  3,  2,  1,  0],
+       [10,  8,  6,  4,  2,  0]])
+
+# indexing goes row, column
+A=[2,3], which means it's calling for the attribute in 2nd row and 3rd column.
+
+i.e., the out put will be [4]
+
+
+81.
+# get the first row
+A[0]
+
+Output:
+[ 1,  2,  3,  3,  2,  1]
+
+
+82.
+NumPy is mutable
+
+83.
+matrix = np.random.randint(1, 11, 12).reshape(3, 4)
+
+low: The lowest integer (inclusive) that can be generated. In this case, it's 1.
+high: The highest integer (exclusive) that can be generated. In this case, it's 11, so the values generated will be in the range [1, 10].
+size: The number of random integers to generate. Here, it's 12, meaning we will get a 1D array of 12 random integers.
+
+Output:
+array([[ 5,  3,  5,  8],
+       [ 8, 10,  2,  8],
+       [ 1,  7, 10, 10]])
+
+
+84.
+tens = np.arange(0, 120, 10).reshape(3, 4)
+tens
+
+Output:
+array([[  0,  10,  20,  30],
+       [ 40,  50,  60,  70],
+       [ 80,  90, 100, 110]])
+
+
+
+85.
+tens.mean(axis=0) 0 = column; 1 = row
+
+Output:
+array([40., 50., 60., 70.])
+
+86.
+tens  = array([[  0,  10,  20,  30],
+       [ 40,  50,  60,  70],
+       [ 80,  90, 100, 110]])
+
+# evaluate whether each element is divisible by 3
+tens % 3 == 0
+
+Output:
+array([[ True, False, False,  True],
+       [False, False,  True, False],
+       [False,  True, False, False]])
+
+
+87.
+tens  = array([[  0,  10,  20,  30],
+       [ 40,  50,  60,  70],
+       [ 80,  90, 100, 110]])
+
+tens[tens % 3 == 0]
+
+Output:
+array([ 0, 30, 60, 90])
+It gives an output of the elements that give an answer of 0 after dividing by 3.
+
+
+88.
+
