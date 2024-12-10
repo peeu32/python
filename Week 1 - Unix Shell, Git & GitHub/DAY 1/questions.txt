@@ -1,0 +1,57 @@
+1.
+#Didn't work
+ls -a|--all
+ls -l -h|--human-readable
+;
+ls -lh ?
+
+
+2.
+ls-t doesn't work for all files?
+
+3.
+locate f*.txt
+
+4.
+how to make the subdirectory as the main directory the relative path way?
+
+5.
+manual openy
+
+6.
+how to get the explorer view
+
+7.
+diff btwn md file and sh file
+
+8.
+didn't have the 2nd line in md file, push?
+
+9.
+get back to old form code
+
+10.
+how to add new branch?
+
+11.
+the conflict didn't get saved on git
+
+
+ASSIGNMENT
+1.
+do we need to download the client data?
+
+2.
+line 2, move the rawdata file to a new folder called raw inside data directory? if so, dont we need to add the raw folder in the first line itself?
+
+3.
+line 4, need to make a new folder called processed?
+
+4.
+line 5 "files with "server" in the name AND a .log extension" meaning NAME that has both server and log? because there's no file with data type log
+
+5.
+should we type going back to 
+
+6.
+WHY SAME NAME?

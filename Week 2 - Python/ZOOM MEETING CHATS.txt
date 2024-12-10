@@ -1,0 +1,131 @@
+ZOOM MEETING CHATS:
+
+DAY1:
+
+DAY2:
+
+DAY3:
+#If checks the first thing.
+
+Elif checks the next thing if the first wasn’t true.
+
+...
+
+Else is the final choice if nothing else worked!
+
+
+
+DAY4:
+
+Use lists when collection needs to change (add, remove, modify). When the collection is constant and should not change, use tuple.
+
+lists take more memory. Tuples are more memory efficient.
+
+ dictionaries don't have index like lists, they have keys which you can use to look up for items.
+
+It's like saying that, give me whatever is in front of 2004 key, if there is nothing there say 'Athens'
+
+In a Python dictionary, keys must be immutable, which means they can be of types like strings, numbers, and tuples (if the tuple itself only contains immutable elements), but not sets since sets are mutable.
+If I got your question right!
+
+For the code that you just typed, try printing type of the key in a for loop. For (2012), the type is int. But if you give (2012, 2014) as key, it will give you tuple
+
+https://www.w3schools.com/python/python_lists_comprehension.asp
+
+$$ NOTE:
+Imagine you have a list of your favorite snacks:
+snacks = ['apple', 'banana', 'chocolate']
+
+for snack in snacks:
+    print(snack)
+
+How It Works:
+Think of a line of snacks:
+    You have a list: ['apple', 'banana', 'chocolate'].
+The for loop is like a helper:
+  The helper picks up each snack one at a time and shows it to you.
+Step-by-step:
+The helper takes the first snack (apple) and prints it.
+Then, the helper takes the next snack (banana) and prints it.
+Finally, the helper picks up the last snack (chocolate) and prints it. $$
+
+$$ First, we created a list, called vowels. 
+There are five element in it.
+
+Then, we use for loop to retrieve the individual element, one at a time. 
+By convention or simplicity, we use I as the variable name. 
+Inside the for loop, we can do the same thing on the element. 
+
+For example, we can print it out.
+Or, we can apply some math formulas on it. 
+
+#create a list of numbers from 1 to 5
+#use for loop to print each number * thousands
+numbers = [1, 2, 3, 4, 5]
+for i in numbers:
+    print(i*1000)
+
+Output will be
+1000
+2000
+3000
+4000
+5000 $$
+
+$$
+range(start, stop, step)
+
+
+start: The number to start from (inclusive).
+stop: The number to stop at (exclusive).
+step: The amount to increase (or decrease) each time. If the step is 2, for example, it will jump by two each time. $$
+
+https://numpy.org/doc/stable/reference/generated/numpy.arange.html
+
+https://docs.python.org/3/
+
+Actually, there's a bit of confusion in the statement. Let me clarify:
+Sets in Python are mutable, meaning you can add or remove elements from a set. However, the elements themselves must be immutable. This means that you cannot have mutable objects (like lists or dictionaries) as elements of a set, but you can have immutable objects (like integers, strings, and tuples).
+Lists are also mutable, meaning you can change, add, or remove elements at any time. This includes mutable objects, such as lists or dictionaries, inside a list.
+
+$$ The zip() function in Python is used to combine two or more iterables (like lists, tuples, etc.) element-wise into a single iterable of tuples. Each tuple contains one element from each of the input iterables at the same position (index).
+
+EXAMPLE
+# Two lists
+chars = ['a', 'b', 'c']
+nums = [1, 2, 3]
+
+# Using zip to combine the two lists
+zipped = zip(chars, nums)
+
+# Converting to list to display the result
+zipped_list = list(zipped)
+print(zipped_list)
+
+Output:
+[('a', 1), ('b', 2), ('c', 3)] $$
+
+$$ NOTE
+Do you remember our cryptocurrency exchange app example?
+Think that we have a set of transactions, which we need to run them one by one, So we make a for loop and iterate through the set of transactions.
+
+EXAMPLE
+# Set of transactions (example data)
+transactions = {"buy 100", "sell 50", "buy 200", "sell 30"} 
+
+# Loop through the transactions set and modify each transaction
+
+for transaction in transactions:
+    run(transaction) $$
+
+$$
+NOTE
+Imagine you want to keep eating cookies, but you only want to eat them while you have cookies left in the jar. The while loop helps you do that! The loop will keep going (eating cookies) as long as there's still a cookie in the jar.
+Here's how it works:
+Condition: You give the computer a rule that it checks before doing something (like, "Do I still have cookies left?").
+Action: If the rule is true (like "Yes, I have cookies left!"), the computer does something (like eating a cookie).
+Repeat: The computer keeps checking the rule and repeating the action until the rule is no longer true (like "No more cookies"). $$
+
+
+
+
