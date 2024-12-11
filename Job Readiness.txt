@@ -1,3 +1,0 @@
-1. Highlight achievements
-2. Remove address, even zip
-3. Don't apply through LinkedIn, apply directly on company website
