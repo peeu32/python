@@ -1,6 +1,0 @@
-BAD
-1. Multiple reviewers on 1 PR, it's not efficient
-2. Not descriptive comments on PR
-3. Python sessions were a bit flaky
-
-GOOD
